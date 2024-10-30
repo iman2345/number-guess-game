@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Welcome Page -->
+  <div id="welcomePage">
+    <h1></h1>
+    <img src="IMAGE/er4fre.png" alt="Welcome Image" style="width:1000%; max-width:800PX;">
+    <p>තුන් පාරයි පුළුවන් මහත්තයො🥲</p>
+    <button onclick="showGame()">පටන් ගමුද 🌝</button>
+    <p>★彡[ᴀʟꜰᴀ ɢᴀᴍɪɴɢ ꜱᴛᴜᴅɪᴏ]彡★</p>
+  </div>
+
+  <!-- Main Game Content -->
+  <div id="gameContent" style="display: none;">
+    <h1>TRY TRY TRY ONE DAY YOU CAN FLY 💞😌</h1>
+    <div class="form">
+      <label for="guessField">Enter a guess: </label>
+      <input type="number" min="1" max="10" required id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    function showGame() {
+      document.getElementById('welcomePage').style.display = 'none';
+      document.getElementById('gameContent').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
